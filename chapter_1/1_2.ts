@@ -14,3 +14,29 @@ function triple(value: string | number): string | number {
   return value * 3;
 }
 
+// トランスパイル前のコード(TS)
+function repeatHelloTS(count: number): string {
+  return 'Hello'.repeat(count);
+}
+
+// トランスパイル後のコード(JS)
+function repeatHelloJS(count) {
+  return 'Hello'.repeat(count);
+}
+
+// トランスパイル前のコード(ES2015)
+class HumanES2015 {
+  greet() {
+    return 'Hello';
+  }
+}
+
+// トランスパイル後のコード(ES5)
+var HumanES5 = /** @class */ (function () {
+  function Human() {
+  }
+  Human.prototype.greet = function () {
+    return 'Hello';
+  };
+  return Human;
+}());
