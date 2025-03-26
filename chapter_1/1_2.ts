@@ -40,5 +40,3 @@ var HumanES5 = /** @class */ (function () {
   };
   return Human;
 }());
-
-
