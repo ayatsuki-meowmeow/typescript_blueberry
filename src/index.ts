@@ -53,3 +53,7 @@ const str5: string = `${str3}, ${str4}`;
 console.log(str5); // "Hello, World!"
 
 console.log(`1 + 1 = ${1 + 1}`); // "1 + 1 = 2"
+
+console.log("Hello \\world/"); // "Hello \world/"
+console.log("Hello \u{796d} world!"); // "Hello 祭 world!"
+console.log("Hello \u796d world!"); // "Hello 祭 world!"
