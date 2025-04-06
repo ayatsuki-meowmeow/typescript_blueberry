@@ -38,3 +38,18 @@ const result = 5n / 2n;
 console.log(result); // 2n
 
 // const errorResult = 5 / 2n; // error TS2365: Operator '/' cannot be applied to types 'number' and 'bigint'.
+
+const str1: string = "Hello";
+const str2: string = 'World!';
+console.log(str1 + ", " + str2); // "Hello, World!"
+
+const message2: string = `Hello
+world`;
+console.log(message2); // "Hello\nworld"
+
+const str3: string = "Hello";
+const str4: string = "World!";
+const str5: string = `${str3}, ${str4}`;
+console.log(str5); // "Hello, World!"
+
+console.log(`1 + 1 = ${1 + 1}`); // "1 + 1 = 2"
