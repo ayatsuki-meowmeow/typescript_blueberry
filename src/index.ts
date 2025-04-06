@@ -57,3 +57,7 @@ console.log(`1 + 1 = ${1 + 1}`); // "1 + 1 = 2"
 console.log("Hello \\world/"); // "Hello \world/"
 console.log("Hello \u{796d} world!"); // "Hello 祭 world!"
 console.log("Hello \u796d world!"); // "Hello 祭 world!"
+
+const no: boolean = false;
+const yes: boolean = true;
+console.log(yes, no); // true false
