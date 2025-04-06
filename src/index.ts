@@ -61,3 +61,11 @@ console.log("Hello \u796d world!"); // "Hello 祭 world!"
 const no: boolean = false;
 const yes: boolean = true;
 console.log(yes, no); // true false
+
+const val1 = null;
+const val2 = undefined;
+console.log(val1, val2); // null undefined
+
+const n: null = null;
+const u: undefined = undefined;
+console.log(n, u); // null undefined
