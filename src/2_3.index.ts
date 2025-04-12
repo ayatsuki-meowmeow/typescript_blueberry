@@ -1,3 +1,5 @@
+import { createInterface } from "readline";
+
 const message: string = "Hello, TypeScript!";
 console.log(message); // "Hello, TypeScript!"
 
@@ -69,3 +71,19 @@ console.log(val1, val2); // null undefined
 const n: null = null;
 const u: undefined = undefined;
 console.log(n, u); // null undefined
+
+const rl = createInterface({
+  input: process.stdin,
+  output: process.stdout,
+});
+// rl.question('文字列を入力してください: ', (line) => {
+//   // 文字列を入力すると、コールバック関数が呼ばれます
+//   console.log(`入力された文字列: ${line}`);
+//   rl.close();
+// });
+rl.question('数字を入力してください: ', (line) => {
+  const result = line + 2; // (parameter) line: string
+  console.log(result);
+  rl.close();
+});
+
