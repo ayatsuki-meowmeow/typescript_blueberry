@@ -1,3 +1,5 @@
+import { createInterface } from "readline";
+
 const addResult = 10 + 20;
 console.log(addResult); // 30
 const discounted = addResult * 0.8;
@@ -42,4 +44,14 @@ console.log(++foo); // 3 変動後の値
 console.log(foo--); // 3 変動前の値
 console.log(--foo); // 1 変動後の値
 
+// const rl = createInterface({
+//   input: process.stdin,
+//   output: process.stdout,
+// });
+// rl.question('名前を入力してください: ', (name) => {
+//   console.log('こんにちは、' + name + 'さん！');
+//   rl.close();
+// });
 
+console.log('foo' + 1); // foo1
+console.log(null + 'bar'); // nullbar
