@@ -23,3 +23,23 @@ console.log(bigint); // 16n
 console.log(5 - 3 - 1); // 1
 console.log((5 - 3) - 1); // 1
 console.log(5 - (3 - 1)); // 3
+
+const x = 123;
+const minusX = -x;
+console.log(minusX); // -123
+
+const str: string = '123';
+const strNum: number = +str;
+console.log(strNum + 100); // 223
+
+let foo = 1;
+foo++; // 2
+console.log(foo); // 2
+--foo; // 1
+console.log(foo); // 1
+console.log(foo++); // 1 変動前の値
+console.log(++foo); // 3 変動後の値
+console.log(foo--); // 3 変動前の値
+console.log(--foo); // 1 変動後の値
+
+
