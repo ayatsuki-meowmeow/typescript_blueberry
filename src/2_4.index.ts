@@ -55,3 +55,21 @@ console.log(--foo); // 1 変動後の値
 
 console.log('foo' + 1); // foo1
 console.log(null + 'bar'); // nullbar
+
+const left1 = 1;
+const right1 = 2;
+console.log(left1 < right1); // true
+
+const left2 = 1n;
+const right2 = 2n;
+console.log(left2 <= right2); // true
+
+const left3 = 1;
+const right3 = 2;
+console.log(left3 > right3); // false
+
+const left4 = 1n;
+const right4 = 2n;
+console.log(left4 >= right4); // false
+
+console.log('apple' > 'orange'); // false
